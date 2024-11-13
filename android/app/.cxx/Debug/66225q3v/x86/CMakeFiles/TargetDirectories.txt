@@ -1,0 +1,3 @@
+D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/x86/CMakeFiles/appmodules.dir
+D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/x86/CMakeFiles/edit_cache.dir
+D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/x86/CMakeFiles/rebuild_cache.dir

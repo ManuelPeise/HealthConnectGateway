@@ -6,113 +6,73 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
+import {useHealthConnect} from './src/_hooks/useHealthConnect';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+const App: React.FC = () => {
+  const {
+    status,
+    isInitialized,
+    steps,
+    initialize,
+    requestPermissions,
+    isAvailable,
+    readSteps,
+  } = useHealthConnect();
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+  React.useEffect(() => {
+    const check = async () => {
+      await initialize();
+      await isAvailable();
+    };
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+    check();
+  }, [initialize, isAvailable]);
+
+  const init = React.useCallback(async () => {
+    await initialize();
+  }, [initialize]);
+
+  const checkStatus = React.useCallback(async () => {
+    await isAvailable();
+  }, [isAvailable]);
+
+  // const getPerm = React.useCallback(async () => {
+  //   await readSteps();
+  // }, [readSteps]);
+
+  console.log('Your Steps:', steps);
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <View>
+      <Text>Hello App</Text>
+      <Text>{`Status ${status} - ${isInitialized}`}</Text>
+      <View style={{padding: 20}}>
+        <TouchableOpacity onPress={init}>
+          <Text>init</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={{padding: 20}}>
+        <TouchableOpacity onPress={checkStatus}>
+          <Text>Check</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={{padding: 20}}>
+        <TouchableOpacity onPress={requestPermissions}>
+          <Text>Perm?</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={{padding: 20}}>
+        <TouchableOpacity onPress={readSteps}>
+          <Text>GetSteps?</Text>
+        </TouchableOpacity>
+      </View>
+      <View>
+        {steps?.records?.map(s => {
+          return <Text>{`Steps: ${s.count} on ${s.startTime}`}</Text>;
+        })}
+      </View>
     </View>
   );
-}
-
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+};
 
 export default App;

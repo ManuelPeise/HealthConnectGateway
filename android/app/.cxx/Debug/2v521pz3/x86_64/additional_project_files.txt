@@ -1,0 +1,7 @@
+C:\HealthConnectGateWay\android\app\.cxx\Debug\2v521pz3\x86_64\RNHealthConnectSpec_autolinked_build\CMakeFiles\react_codegen_RNHealthConnectSpec.dir\RNHealthConnectSpec-generated.cpp.o
+C:\HealthConnectGateWay\android\app\.cxx\Debug\2v521pz3\x86_64\RNHealthConnectSpec_autolinked_build\CMakeFiles\react_codegen_RNHealthConnectSpec.dir\react\renderer\components\RNHealthConnectSpec\ComponentDescriptors.cpp.o
+C:\HealthConnectGateWay\android\app\.cxx\Debug\2v521pz3\x86_64\RNHealthConnectSpec_autolinked_build\CMakeFiles\react_codegen_RNHealthConnectSpec.dir\react\renderer\components\RNHealthConnectSpec\EventEmitters.cpp.o
+C:\HealthConnectGateWay\android\app\.cxx\Debug\2v521pz3\x86_64\RNHealthConnectSpec_autolinked_build\CMakeFiles\react_codegen_RNHealthConnectSpec.dir\react\renderer\components\RNHealthConnectSpec\Props.cpp.o
+C:\HealthConnectGateWay\android\app\.cxx\Debug\2v521pz3\x86_64\RNHealthConnectSpec_autolinked_build\CMakeFiles\react_codegen_RNHealthConnectSpec.dir\react\renderer\components\RNHealthConnectSpec\RNHealthConnectSpecJSI-generated.cpp.o
+C:\HealthConnectGateWay\android\app\.cxx\Debug\2v521pz3\x86_64\RNHealthConnectSpec_autolinked_build\CMakeFiles\react_codegen_RNHealthConnectSpec.dir\react\renderer\components\RNHealthConnectSpec\ShadowNodes.cpp.o
+C:\HealthConnectGateWay\android\app\.cxx\Debug\2v521pz3\x86_64\RNHealthConnectSpec_autolinked_build\CMakeFiles\react_codegen_RNHealthConnectSpec.dir\react\renderer\components\RNHealthConnectSpec\States.cpp.o
