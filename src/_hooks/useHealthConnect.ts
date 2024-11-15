@@ -7,35 +7,46 @@ import {
   getSdkStatus,
   Permission,
   ReadRecordsResult,
-  //   revokeAllPermissions,
 } from 'react-native-health-connect';
+// import {HealthConnectPermission} from '../_views/_healthConnect/_types/HealthConnectTypes';
 
 export const useHealthConnect = () => {
-  const [status, setStatus] = React.useState<number>(-1);
+  // TODO build Models
+  // const [permissionModels, setPermissionModels] = React.useState<
+  //   HealthConnectPermission[]
+  // >([]);
+
   const [initialized, setInitialized] = React.useState<boolean>(false);
+  const [grantedPermissions, setGrantedPermissions] = React.useState<
+    Permission[]
+  >([]);
+
   const [perm, setPerm] = React.useState<Permission[]>([]);
   const [steps, setSteps] = React.useState<ReadRecordsResult<'Steps'> | null>(
     null,
   );
-  const init = React.useCallback(async () => {
-    const isInitialized = await initialize();
 
-    console.log('is init:', isInitialized);
-    setInitialized(isInitialized);
+  // initialize
+  React.useEffect(() => {
+    const onLoad = async () => {
+      setInitialized(await initialize());
+    };
+
+    onLoad();
   }, []);
 
-  const isAvailable = React.useCallback(async () => {
-    const res = await getSdkStatus();
+  React.useEffect(() => {
+    const onLoad = async () => {
+      if (initialized) {
+        setGrantedPermissions(await getGrantedPermissions());
+      }
+    };
 
-    console.log('Response', res);
-    setStatus(res);
-    if (res === 1) {
-      return {status: false, message: 'SDK unavailable'};
-    } else if (res === 2) {
-      return {status: false, message: 'SDK update required'};
-    } else if (res === 3) {
-      return {status: true, message: 'Health Connect available'};
-    }
+    onLoad();
+  }, [initialized]);
+
+  const isAvailable = React.useCallback(async () => {
+    return await getSdkStatus();
   }, []);
 
   const getPermission = React.useCallback(async () => {
@@ -77,16 +88,14 @@ export const useHealthConnect = () => {
   }, []);
 
   const getGranted = React.useCallback(async () => {
-    const result = await getGrantedPermissions();
-
-    console.log('Granted: ', result);
+    return await getGrantedPermissions();
   }, []);
+
   return {
-    status: status,
     isInitialized: initialized,
+    grantedPermissions: grantedPermissions,
     permissions: perm,
     steps: steps,
-    initialize: init,
     isAvailable: isAvailable,
     requestPermissions: getPermission,
     readSteps: readSteps,
