@@ -1,2 +1,0 @@
-C:\HealthConnectGateWay\node_modules\react-native-health-connect\android\build\generated\source\codegen\jni\CMakeLists.txt
-C:\HealthConnectGateWay\node_modules\react-native\ReactAndroid\cmake-utils\default-app-setup\CMakeLists.txt

@@ -1,1 +1,0 @@
-C:\HealthConnectGateWay\android\app\build\intermediates\cxx\Debug\2v521pz3\obj\x86_64

@@ -1,1 +1,0 @@
-D:\Development\WorkFolder\TrainingTracker\TrackMyTraining\sources\TrainingAndMore\Web.Core.Native\HealthConnectGateWay\android\app\build\intermediates\cxx\Debug\66225q3v\obj\x86

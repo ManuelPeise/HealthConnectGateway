@@ -1,2 +1,0 @@
-D:\Development\WorkFolder\TrainingTracker\TrackMyTraining\sources\TrainingAndMore\Web.Core.Native\HealthConnectGateWay\node_modules\react-native-health-connect\android\build\generated\source\codegen\jni\CMakeLists.txt
-D:\Development\WorkFolder\TrainingTracker\TrackMyTraining\sources\TrainingAndMore\Web.Core.Native\HealthConnectGateWay\node_modules\react-native\ReactAndroid\cmake-utils\default-app-setup\CMakeLists.txt
