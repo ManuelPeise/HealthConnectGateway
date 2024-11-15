@@ -1,0 +1,6 @@
+C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/x86/CMakeFiles/appmodules.dir
+C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/x86/CMakeFiles/edit_cache.dir
+C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/x86/CMakeFiles/rebuild_cache.dir
+C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/x86/RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir
+C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/x86/RNHealthConnectSpec_autolinked_build/CMakeFiles/edit_cache.dir
+C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/x86/RNHealthConnectSpec_autolinked_build/CMakeFiles/rebuild_cache.dir

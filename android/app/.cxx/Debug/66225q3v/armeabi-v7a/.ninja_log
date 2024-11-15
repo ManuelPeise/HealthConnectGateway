@@ -1,0 +1,9 @@
+# ninja log v5
+2	48	0	D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/armeabi-v7a/CMakeFiles/cmake.verify_globs	ebfe83999751bbe
+6	2868	7532240153612326	CMakeFiles/appmodules.dir/911c255935d8dee64f6f2e114e06a849/main/jni/autolinking.cpp.o	75ab1864c27657f8
+2	3258	7532240157509656	CMakeFiles/appmodules.dir/OnLoad.cpp.o	dbd67171fb4b940f
+3259	3396	7532240158936370	D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/build/intermediates/cxx/Debug/66225q3v/obj/armeabi-v7a/libappmodules.so	89536fe59f748d50
+2	31	0	D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/armeabi-v7a/CMakeFiles/cmake.verify_globs	ebfe83999751bbe
+2	24	0	D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/armeabi-v7a/CMakeFiles/cmake.verify_globs	ebfe83999751bbe
+2	32	0	D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/armeabi-v7a/CMakeFiles/cmake.verify_globs	ebfe83999751bbe
+2	35	0	D:/Development/WorkFolder/TrainingTracker/TrackMyTraining/sources/TrainingAndMore/Web.Core.Native/HealthConnectGateWay/android/app/.cxx/Debug/66225q3v/armeabi-v7a/CMakeFiles/cmake.verify_globs	ebfe83999751bbe

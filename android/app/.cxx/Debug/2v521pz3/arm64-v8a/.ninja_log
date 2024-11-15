@@ -1,0 +1,18 @@
+# ninja log v5
+3	55	0	C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/arm64-v8a/CMakeFiles/cmake.verify_globs	e8d13c47e7991c38
+36	6911	7532279234407724	RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir/react/renderer/components/RNHealthConnectSpec/States.cpp.o	3c86407a9b0a003
+25	7240	7532279237582393	RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir/react/renderer/components/RNHealthConnectSpec/EventEmitters.cpp.o	940bc0c71c445c1c
+42	8865	7532279253493753	RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir/react/renderer/components/RNHealthConnectSpec/ShadowNodes.cpp.o	e386f7147efa8f34
+31	9241	7532279257591930	RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir/react/renderer/components/RNHealthConnectSpec/RNHealthConnectSpecJSI-generated.cpp.o	cd6b919d33cec32
+19	9344	7532279258609087	RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir/react/renderer/components/RNHealthConnectSpec/ComponentDescriptors.cpp.o	a9cabf3cc4c2ceec
+14	9427	7532279259285253	RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir/react/renderer/components/RNHealthConnectSpec/Props.cpp.o	8479b495beb3bd3f
+10	9713	7532279262369482	RNHealthConnectSpec_autolinked_build/CMakeFiles/react_codegen_RNHealthConnectSpec.dir/RNHealthConnectSpec-generated.cpp.o	49e58d3e89b47bc
+1	9910	7532279264335544	CMakeFiles/appmodules.dir/C_/HealthConnectGateWay/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	2f57ef33f8d96d3f
+5	10561	7532279270935978	CMakeFiles/appmodules.dir/OnLoad.cpp.o	2c0db4fb9d4a4694
+10561	10728	7532279272660473	C:/HealthConnectGateWay/android/app/build/intermediates/cxx/Debug/2v521pz3/obj/arm64-v8a/libappmodules.so	3dd358543b12fde6
+16	96	0	C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/arm64-v8a/CMakeFiles/cmake.verify_globs	e8d13c47e7991c38
+3	26	0	C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/arm64-v8a/CMakeFiles/cmake.verify_globs	e8d13c47e7991c38
+4	26	0	C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/arm64-v8a/CMakeFiles/cmake.verify_globs	e8d13c47e7991c38
+3	27	0	C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/arm64-v8a/CMakeFiles/cmake.verify_globs	e8d13c47e7991c38
+3	28	0	C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/arm64-v8a/CMakeFiles/cmake.verify_globs	e8d13c47e7991c38
+2	25	0	C:/HealthConnectGateWay/android/app/.cxx/Debug/2v521pz3/arm64-v8a/CMakeFiles/cmake.verify_globs	e8d13c47e7991c38
