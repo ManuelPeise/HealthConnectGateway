@@ -1,13 +1,31 @@
 import React from 'react';
 import {PrivateAxiosClient} from '../_lib/_Api/PrivateAxiosClient';
 import {useAuthContext} from './useAppContext';
+import {IApiResponse} from '../_lib/_interfaces/IApiResponse';
+
+type RefreshTokenModel = {
+  token: string;
+};
+
+const refreshTokenUrl = 'Authentication/RefreshToken';
 
 export const useAxiosPrivate = () => {
   const {tokenModel, setToken} = useAuthContext();
 
   const refreshToken = React.useCallback(async (): Promise<string> => {
-    return '';
-  }, []);
+    const model: RefreshTokenModel = {token: tokenModel?.token ?? ''};
+    let token = '';
+
+    await PrivateAxiosClient.post(refreshTokenUrl, model).then(async res => {
+      if (res.status === 200) {
+        const responseData: IApiResponse<string> = res.data;
+
+        token = responseData.data;
+      }
+    });
+
+    return token;
+  }, [tokenModel]);
 
   React.useEffect(() => {
     const requestIntercept = PrivateAxiosClient.interceptors.request.use(
